@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         return sb.toString();
     }
 
+
     //檢查方法
     private String checkAB(String g){
         int A, B; A = B = 0;
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         num1 = findViewById(R.id.num1);
     }
 
-
+//TODO here!!
     private Button.OnClickListener btnListener = new Button.OnClickListener(){
         @Override
         public void onClick(View v) {
