@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/game_bg"
     tools:context=".MainActivity">
-
+    //頂部圖片
     <ImageView
         android:id="@+id/top"
         android:layout_width="match_parent"
@@ -14,14 +14,15 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/title_bg" />
 
-    <LinearLayout
+    //下面按鈕區 可改成 TableLayout:
+    <TableLayout
         android:id="@+id/bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
-        <LinearLayout
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -29,31 +30,36 @@
             android:padding="4dp">
 
             <Button
+                android:id="@+id/btn1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:onClick="btn1"
                 android:background="@drawable/btn_1" />
 
             <Button
+                android:id="@+id/btn2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_2" />
 
             <Button
+                android:id="@+id/btn3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_3" />
 
             <Button
+                android:id="@+id/btn4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_4" />
-        </LinearLayout>
+        </TableRow>
 
-        <LinearLayout
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -61,31 +67,35 @@
             android:padding="4dp">
 
             <Button
+                android:id="@+id/btn5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_5" />
 
             <Button
+                android:id="@+id/btn6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_6" />
 
             <Button
+                android:id="@+id/btn7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_7" />
 
             <Button
+                android:id="@+id/btn8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_8" />
-        </LinearLayout>
+        </TableRow>
 
-        <LinearLayout
+        <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -93,29 +103,33 @@
             android:padding="4dp">
 
             <Button
+                android:id="@+id/btn9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_9" />
 
             <Button
+                android:id="@+id/btn0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_0" />
 
             <Button
+                android:id="@+id/btnBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_back" />
 
             <Button
+                android:id="@+id/btnClear"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/btn_clear" />
-        </LinearLayout>
+        </TableRow>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -125,11 +139,14 @@
             android:padding="4dp">
 
             <Button
+                android:id="@+id/guess"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="10dp"
-                android:background="@drawable/btn_send" />
+                android:background="@drawable/btn_send"
+
+                />
 
             <Button
                 android:layout_width="wrap_content"
@@ -140,8 +157,9 @@
         </RelativeLayout>
 
 
-    </LinearLayout>
+    </TableLayout>
 
+    //上方數字顯示區
     <RelativeLayout
         android:id="@+id/num"
         android:layout_width="match_parent"
@@ -203,6 +221,7 @@
 
     </RelativeLayout>
 
+    //log區
     <TextView
         android:id="@+id/log"
         android:layout_width="match_parent"
